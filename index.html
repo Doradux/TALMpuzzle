@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="media/images/diff3.png">
+    <link rel="stylesheet" href="css/game.css" />
+    <title>TALMpuzzle</title>
+  </head>
+  <body>
+    <div class="game">
+      <div class="levels">
+        <div class="lvl lvl1"><p>1</p></div>
+        -
+        <div class="lvl lvl2 locked"><p>2</p></div>
+        -
+        <div class="lvl lvl3 locked"><p>3</p></div>
+        -
+        <div class="lvl lvl4 locked"><p>4</p></div>
+        -
+        <div class="lvl lvl5 locked"><p>5</p></div>
+        -
+        <div class="lvl lvl6 locked"><p>6</p></div>
+        -
+        <div class="lvl lvl7 locked"><p>7</p></div>
+      </div>
+      <div class="levels">
+        <div class="lvl lvl8 locked"><p>8</p></div>
+        -
+        <div class="lvl lvl9 locked"><p>9</p></div>
+        -
+        <div class="lvl lvl10 locked"><p>10</p></div>
+        -
+        <div class="lvl lvl11 locked"><p>11</p></div>
+        -
+        <div class="lvl lvl12 locked"><p>12</p></div>
+        -
+        <div class="lvl lvl13 locked"><p>13</p></div>
+        -
+        <div class="lvl lvl14 locked"><p>14</p></div>
+      </div>
+
+      <div class="main">
+        <div class="bot">
+          <div class="bot1">
+            <div class="stats">
+              <h2>LEVEL:</h2>
+              <h2 id="lvlnumber">1</h2>
+            </div>
+
+            <div class="stats">
+              <h2>ATTEMPTS:</h2>
+              <h2 id="attempts">0</h2>
+            </div>
+          </div>
+
+          <div class="difficulty">
+            <h2>DIFFICULTY:</h2>
+            <div id="diff"></div>
+          </div>
+        </div>
+
+        <div class="game">
+          <div class="cover"></div>
+          <div class="img">
+            <img
+              id="gameImg"
+              src="media/images/reward/7image.png"
+              alt="image"
+            />
+          </div>
+        </div>
+      </div>
+
+      <audio id="audio" autoplay>
+        <source src="./media/audio/music.mp3" />
+      </audio>
+
+      <div id="playButton">
+        <img src="media/images/music-off.png" alt="music" />
+      </div>
+
+      <div class="blur"></div>
+      <div id="info" class="info"><img src="media/images/info.png" alt="info" /></div>
+    </div>
+
+    <div class="info_shield">
+      <div class="info_menu">
+        <div class="info_text">
+          <p>
+            Find two identical cards to form a pair and progress through the
+            level.
+          </p>
+        </div>
+        <div class="info_photos">
+          <img src="media/images/cards/card1.webp" />
+          <img src="media/images/cards/card2.webp" />
+          <img src="media/images/cards/card3.webp" />
+          <img src="media/images/cards/card4.webp" />
+          <img src="media/images/cards/card5.webp" />
+          <img src="media/images/cards/card6.webp" />
+        </div>
+
+        <div class="info_text">
+          <p>You can select the level you want at the top of the screen.</p>
+          <p>
+            Once you complete the level you can play it again or completely
+            reveal the image without playing the puzzle.
+          </p>
+          <p>
+            bla bla bla
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  <script src="js/game_mechanics.js"></script>
+</html>
